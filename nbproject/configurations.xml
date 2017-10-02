@@ -12,7 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>sudoku_NhatTrinh_645.cpp</itemPath>
+      <itemPath>sudoku_NhatTrinh_645.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -35,8 +35,13 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
-      <item path="sudoku_NhatTrinh_645.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sudoku_NhatTrinh_645.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +64,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="sudoku_NhatTrinh_645.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sudoku_NhatTrinh_645.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

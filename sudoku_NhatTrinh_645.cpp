@@ -11,9 +11,18 @@ typedef struct{
     int column;
     } parameters;
     
-    
-    void run(void * arg){
+    void parent_run(int[9][9] arg){
         
+    }
+    
+    void worker_run(parameters * arg){
+        if (arg->row == 0 && arg->column == 0){
+            for (int i = 0; i < 3; i++){
+                for (int j = 0; j < 3; j++){
+                    grid[i][j] = 
+                }
+            }
+        }
         
         // free the memory when the action is done
         free(arg);
@@ -33,7 +42,10 @@ int main(int argc, char** argv) {
     int row = 0;
     int column = 0;
     
-    pthread_t threads[NUM_THREADS];
+    pthread_t parent_thread;
+    pthread_t worker_threads[NUM_THREADS];
+    
+    pthread_create(parent_thread, NULL, grid);
     
     for (int i = 0; i < NUM_THREADS; i++){
         if (i > 1){
