@@ -219,7 +219,7 @@ void print_sudoku(){
 
 int main(int argc, char** argv) {
     // greet the user
-    printf("CS149 from Nhat Trinh.\n");
+    printf("Sudoku Checker from Nhat Trinh.\n");
     
     // variable for parent thread
     pthread_t parent_thread;
